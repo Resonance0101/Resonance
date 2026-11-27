@@ -244,30 +244,24 @@ header .brand:focus-visible,.return-home button:focus-visible{outline:2px solid 
 }
 
 
-/* V2.17: final responsive polish, preserving portrait composition. */
+/* V2.18: retain V2.16 hero framing and V2.17 non-sizing refinements. */
 .v2-hero-inner{background:none}
 .v2-title{text-shadow:0 3px 12px #000,0 0 26px #071321}
 .v2-card-art{aspect-ratio:3/1;height:auto;object-fit:contain;background:#091522}
 .v2-card-copy{justify-content:flex-start}
 .v2-tile strong{margin-top:0}
-@media(min-width:701px) and (min-height:501px){
- .v2-hero{height:calc(100svh - 62px);min-height:0;background-size:100% 100%,cover,100% 100%}
-}
 @media(min-width:1021px){
  body:has(.home-v2) header nav button{font-size:.84rem;padding:7px 8px}
 }
 @media(min-width:1500px) and (min-height:501px){
- .v2-hero{height:calc(100svh - 62px);background:#060b13}
  .v2-hero:before{filter:blur(38px) brightness(.62);inset:-45px}
- .v2-hero:after{background-size:100% 100%,contain;mask-image:linear-gradient(90deg,transparent 0%,#000 30%,#000 70%,transparent 100%)}
+ .v2-hero:after{mask-image:linear-gradient(90deg,transparent 0%,#000 22%,#000 78%,transparent 100%)}
  body:has(.home-v2) header nav button{font-size:.96rem;padding:8px 10px}
 }
 @media(min-width:2400px){
  .v2-content{max-width:min(78vw,2600px)}
  body:has(.home-v2) header{padding-inline:max(24px,calc((100vw - min(78vw,2600px))/2))}
  body:has(.home-v2) header nav button{font-size:1.18rem;padding:9px 13px}
- /* Feather relative to the actual 16:9 foreground, not the viewport edges. */
- .v2-hero:after{mask-image:linear-gradient(90deg,transparent max(0px,calc(50% - (100svh - 62px)*.8889)),#000 calc(50% - (100svh - 62px)*.65),#000 calc(50% + (100svh - 62px)*.65),transparent min(100%,calc(50% + (100svh - 62px)*.8889)))}
 }
 
 </style></head><body><header><button type="button" class="brand" data-go="home" aria-label="Resonance — return to homepage">RESONANCE</button><button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-controls="nav" aria-expanded="false" aria-label="Open navigation menu">☰ Menu</button><nav id="nav"></nav></header><main id="main"></main><footer>RESONANCE • A developing science-fantasy universe • Prototype archive v1.0 • All lore is provisional</footer><script>
